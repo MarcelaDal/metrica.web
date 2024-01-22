@@ -1,0 +1,45 @@
+.wspLogo {
+    margin-right: 8px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.icon1 {
+    max-width: 80px;
+    margin:auto;
+}
+
+.icon2 {
+    max-width: 48px;
+    margin:auto;
+}
+
+.hr1{
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.icon2 {
+    width: 32px;
+}
+
+.icon3 {
+    max-width: 100px;
+    z-index: 1
+}
+.masthead-device-mockup{
+    padding: 80px;
+}
+@media (min-width: 576px) {
+    .icon3 {
+        max-width: 200px;
+    }
+    .masthead-device-mockup{
+        padding: unset;
+    }
+   
+  }
