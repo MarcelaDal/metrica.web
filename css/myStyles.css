@@ -87,12 +87,16 @@
         padding: 20px 20px;
         bottom: 30px;
         left: 30px;
-    }
+    }  
 }
+
 
 @media (min-width: 992px) {
     .br-lg {
         border-right: 0.5px white solid;
+    }
+    #galeriaImg {
+        display: none;
     }
 }
 
@@ -100,4 +104,12 @@
     .bb-sm {
         border-bottom: 0.5px white solid;
     }
+    #carouselImg {
+        display:  none;
+    }
+
+    #galeriaImg {
+        display: block;
+    }
 }
+
