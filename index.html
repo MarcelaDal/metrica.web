@@ -261,6 +261,8 @@
               <div class="row">
                 <div class="col-lg-4">
                   <div
+                    style="cursor: pointer;"
+                    onclick="openDynamicModal('Card 1', 'Este es el contenido de la Card 1')"
                     class="card"
                     title="Rolo alimentador de máquina chipeadora"
                   >
@@ -971,7 +973,7 @@
           <div class="col-md-4 cursor-pointer" onclick="openMap()">
             <img src="assets/icons/location.svg" class="icon2" />
             <p class="text-white">
-              Av. Libertad 1390. Chajarí, Entre Ríos, Argentina.
+              Av. Belgrano 1785. Chajarí, Entre Ríos, Argentina.
             </p>
           </div>
         </div>
@@ -1012,5 +1014,25 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+    <div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="dynamicModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body" id="dynamicModalBody">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
+
+ 
 </html>
