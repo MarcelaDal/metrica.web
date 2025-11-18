@@ -1,14 +1,15 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  // Activate Bootstrap scrollspy on the main nav element
+  // Activar ScrollSpy de Bootstrap en el elemento principal de navegación
   const mainNav = document.body.querySelector("#mainNav");
   if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: "#mainNav",
-      offset: 74,
+    // Bootstrap 4 utiliza la inicialización con .scrollspy()
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 74
     });
   }
 
-  // Collapse responsive navbar when toggler is visible
+  // Colapsar la barra de navegación responsiva cuando se haga clic en un enlace
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = [].slice.call(
     document.querySelectorAll("#navbarResponsive .nav-link")
@@ -21,6 +22,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
 
 function openWspWeb() {
   window.open("https://wa.me/5493456440272", "_blank").focus();
